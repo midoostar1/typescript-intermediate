@@ -13,6 +13,7 @@ class Instagram implements TakePhoto {
 }
 
 
+//has to implement all fields of both interface its implementing
 class Youtube implements TakePhoto, Story {
     constructor(public cameraMode: string, public filter: string, public burst: number, public shorts: string) {}
     createStory(): void {
