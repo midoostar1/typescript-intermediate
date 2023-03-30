@@ -27,3 +27,25 @@ function getSearchProduct2(products) {
 const getMoreSearchProduct = (products) => {
     return products;
 };
+function generics(val1, val2) {
+    return {
+        val1,
+        val2,
+    };
+}
+generics(3, 'mido');
+//second parameter cannot be a string
+function generics1(val1, val2) {
+    return {
+        val1,
+        val2,
+    };
+}
+class Sellable {
+    constructor() {
+        this.cart = [];
+    }
+    addToCart(product) {
+        this.cart.push(product);
+    }
+}
